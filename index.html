@@ -13,6 +13,8 @@
         <h1>Catálogo de Inputs HTML</h1>
         <p>Um formulário de exemplo para demonstrar os diferentes tipos de input e seus atributos</p>
 
+        
+
         <!--  Indica que será um formulário de envio de dados (servidor) -->
 
         <form class="input-catalog-form">
@@ -146,18 +148,30 @@
 
             </section>
 
+            <!-- Arquivos e cores -->
             <section class="form-section">
 
                 <fieldset class="form-group">
-
+                    <legend class="">Arquivos e Cores</legend>
+             
+                    <label for="cor" class="form-label">Cor Favorita:</label>
+                    <input type="color" id="cor" name="cor" class="form-color-picker" value="#ffff"/>
+                
+                    <label for="foto"  class="form-label">Foto de Perfil:</label>
+                    <input type="file" id="foto" name="foto" class="form-file-input"  accept="image/png, image,jpeg"/>
                 </fieldset>
 
             </section>
 
+            <!-- Controles do Formulário -->
             <section class="form-section">
-
                 <fieldset class="form-group">
-
+                    <legend class="form-group">Controles do Formulário</legend>
+                    <div class="form-controls">
+                        <input type="submit" value="Enviar Formulário" class="form-button submit_button"/>
+                        <input type="reset" value="Limpar Tudo" class="form-button reset-button"/>
+                        <input type="button" value="Botão Genérico" class="form-button action-button" onclick="alert('Você clicou no botão!')"/>
+                    </div>
                 </fieldset>
 
             </section>
