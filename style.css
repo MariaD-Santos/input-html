@@ -1,6 +1,154 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+}
+
+/* container principal que ocupa toda a tela */
+.main-container{
+
+    padding: 40px 20px;
+
+    /* minimo de altura do tamanho da tela, usado para container diferente do % que é para os filhos */
+    min-height: 100vh; 
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+}
+
+/* Estilos para os títulos e parágrafos de */
+.main-container > h1{
+
+    text-align: center;
+    color: orangered;
+    margin-bottom: 10px; 
+    /* cria um espaço para o próximo elemento */
+
+}
+
+/* Esse simbolo no código são todos os contaiers que estão dentro do Main */
+.main-container > p {
+    text-align: center;
+    max-width: 600px;
+    /* O máximo que o p vai aumentar é 600px, já que ele é display block */
+    margin: 0 auto 30px auto;
+}
+
+/* formatação padrão do formulário */
+.input-catalog-form{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 2px 12px rgb(104, 104, 104);
+}
+
+/* formatação padrão das seções do formulário */
+.form-section{
+    margin-bottom: 20px;
+}
+
+
+/* Grupo dos campos (fieldset) */
+.form-group{
+
+    padding: 20px;
+    border: 1px, solid;
+    border-color: rgb(156, 156, 156);
+    border-radius: 5px;
+}
+
+
+
+/* Ttitulos do grupo (legend) */
+.form-group-title{
+
+    padding: 0 10px;
+
+}
+
+/* Rótulos dos campos (Label) */
+.form-label{
+
+    display: block;
+
+}
+
+/* Estilo padrão para os inputs e select */
+.form-input, form-select{
+
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+
+/* Estilo para checkbox e radio */
+.form-check{
+
+    width: 100%;
+    line-height: 1.6;
+
+
+}
+
+.form-check input{
+
+}
+/* Reseta margem da label dentro do form-check */
+.form-check label{
+
+}
+/* Container para os botõoes do formuláro */
+.form-controls{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+
+}
+/* Estilo base dos botões */
+.form-button{
+
+   padding: 10px;
+   border: 2px solid;
+   border-color: rgb(190, 190, 190);
+   border-radius: 5px;
+   background-color: rgb(255, 255, 255);
+
+}
+
+.form-button:hover{
+
+}
+/* Cores específicad para cada tipo de botão */
+.submit-button{
+
+}
+
+.submit-button:hover{
+
+}
+
+.reset-button{
+
+}
+
+.reset-button:hover{
+
+}
+
+.action-button{
+
+}
+
+.action-button:hover{
 
 }
